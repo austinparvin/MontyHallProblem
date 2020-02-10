@@ -19,8 +19,12 @@ namespace MontyHallProblem
         int finalGuess;
 
         //Who many times you would like to run the program
+        Console.WriteLine("How many times would you like to run the test?");
         int q = Convert.ToInt32(Console.ReadLine());
 
+        //Asks the user if they want to test 
+        Console.WriteLine("Are you going to switch? ('y' or 'n')");
+        switchChoice = Console.ReadLine();
         for (int i = 0; i < q; i++)
         {
           // Sets a random answer 
@@ -94,7 +98,7 @@ namespace MontyHallProblem
 
 
           //You can manually set this value to test the percantage outcome of switching or not.
-          switchChoice = "n";
+          //switchChoice = "n";
 
           if (switchChoice == "y")
             finalGuess = switchOption;
@@ -118,6 +122,7 @@ namespace MontyHallProblem
         }
 
         Console.WriteLine("Correct: {0}      Wrong: {1}", correct, wrong);
+        Console.WriteLine("");
       } while (true);
     }
   }
