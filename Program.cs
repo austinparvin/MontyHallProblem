@@ -8,8 +8,6 @@ namespace MontyHallProblem
     static void Main(string[] args)
     {
       bool runAgain;
-      int correct = 0;
-      int wrong = 0;
       int switchOption;
       int doorShown;
       int answer;
@@ -19,6 +17,10 @@ namespace MontyHallProblem
 
       do
       {
+
+        int correct = 0;
+        int wrong = 0;
+        
         //Who many times you would like to run the program
         Console.WriteLine("How many times would you like to run the test? (enter 0 to exit)");
         int q = Convert.ToInt32(Console.ReadLine());
@@ -129,7 +131,7 @@ namespace MontyHallProblem
             wrong++;
           }
 
-
+        
         }
 
         Console.WriteLine("Correct: {0}      Wrong: {1}", correct, wrong);
