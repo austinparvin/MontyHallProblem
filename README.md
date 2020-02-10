@@ -1,25 +1,19 @@
-# Default Template for SDG .NET Course
+# Monty Hall Problem
 
-This is the default template for a simple .NET Core console app. This template has:
+Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?
 
-- github integration
+## The Answer
 
-## To push to github
+The contestant should switch to the other door 
 
-To create and push your current code to github, use the task `create-github`.
+## The Reasonings
 
-How?
+The given probabilities depend on specific assumptions about how the host and contestant choose their doors. A key insight is that, under these standard conditions, there is more information about doors 2 and 3 than was available at the beginning of the game when door 1 was chosen by the player: the host's deliberate action adds value to the door he did not choose to eliminate, but not to the one chosen by the contestant originally. 
 
-1. Open your command pallette by using (Mac) `shift + cmd + p` or (Windows) `shift + ctrl + p`
-2. Search and Select `Tasks: Run Task`
-3. Select `create-github` from the dropdown
+Another insight is that switching doors is a different action than choosing between the two remaining doors at random, as the first action uses the previous information and the latter does not. Other possible behaviors than the one described can reveal different additional information, or none at all, and yield different probabilities. 
 
-This will create a new github repo, locally and up on github and also push your current code.
+Yet another insight is that your chance of winning by switching doors is directly related to your chance of choosing the winning door in the first place: if you choose the correct door on your first try, then switching loses; if you choose a wrong door on your first try, then switching wins; your chance of choosing the correct door on your first try is 1/3, and the chance of choosing a wrong door is 2/3
 
-## To turn in your assignment:
+## Test it out for yourself!
 
-after you have created a github repo, completed your project and pushed your code, follow these instructions: https://suncoast.io/handbook/tools/assignment-turn-in/
-
-## PROTIP:
-
-When you are complete with the project and have turned it in to your instructor, update this read me with details about the assignment.
+See what results you get when switching vs not switching!
