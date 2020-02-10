@@ -7,24 +7,35 @@ namespace MontyHallProblem
   {
     static void Main(string[] args)
     {
+      bool runAgain;
+      int correct = 0;
+      int wrong = 0;
+      int switchOption;
+      int doorShown;
+      int answer;
+      int guess;
+      string switchChoice;
+      int finalGuess;
+
       do
       {
-        int correct = 0;
-        int wrong = 0;
-        int switchOption;
-        int doorShown;
-        int answer;
-        int guess;
-        string switchChoice;
-        int finalGuess;
-
         //Who many times you would like to run the program
-        Console.WriteLine("How many times would you like to run the test?");
+        Console.WriteLine("How many times would you like to run the test? (enter 0 to exit)");
         int q = Convert.ToInt32(Console.ReadLine());
+        if (q == 0)
+          runAgain = false;
+        else
+        {
+          runAgain = true;
 
-        //Asks the user if they want to test 
-        Console.WriteLine("Are you going to switch? ('y' or 'n')");
-        switchChoice = Console.ReadLine();
+
+
+
+          //Asks the user if they want to test 
+          Console.WriteLine("Are you going to switch? ('y' or 'n')");
+          switchChoice = Console.ReadLine();
+        
+
         for (int i = 0; i < q; i++)
         {
           // Sets a random answer 
@@ -123,7 +134,8 @@ namespace MontyHallProblem
 
         Console.WriteLine("Correct: {0}      Wrong: {1}", correct, wrong);
         Console.WriteLine("");
-      } while (true);
+        }
+      } while (runAgain);
     }
   }
 }
