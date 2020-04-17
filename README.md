@@ -17,3 +17,9 @@ Yet another insight is that your chance of winning by switching doors is directl
 ## Test it out for yourself!
 
 See what results you get when switching vs not switching!
+
+## Playing 
+![](http://g.recordit.co/nu1454iiKf.gif)
+
+## Testing
+![](http://g.recordit.co/KHm3ZD2CBP.gif)
